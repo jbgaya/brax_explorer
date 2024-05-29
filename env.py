@@ -2,7 +2,7 @@ import gym
 
 class Environment:
     def __init__(self, env_name):
-        self.env = env = gym.make(env_name, new_step_api=True)
+        self.env = gym.make(env_name)
 
     def reset(self):
         return self.env.reset()
